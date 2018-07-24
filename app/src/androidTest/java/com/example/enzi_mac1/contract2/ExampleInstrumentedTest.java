@@ -1,4 +1,4 @@
-package com.enzi.contract;
+package com.example.enzi_mac1.contract2;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.enzi.contract", appContext.getPackageName());
+        assertEquals("com.example.enzi_mac1.contract2", appContext.getPackageName());
     }
 }
