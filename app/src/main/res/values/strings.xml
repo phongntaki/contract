@@ -1,3 +1,47 @@
 <resources>
     <string name="app_name">contract</string>
+    <string name="textHint">Typing here</string>
+    <string name="sq_prompt">□ sq</string>
+    <string-array name="sq_arrays">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="alpha_arrays">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+    </string-array>
+    <string-array name="yes_no_arrays">
+        <item>有</item>
+        <item>無</item>
+    </string-array>
+    <string name="start_new">New</string>
+    <string name="colors">Colors</string>
+    <string name="brush">Brush</string>
+    <string name="erase">Erase</string>
+    <string name="save">Save</string>
+    <string name="paint">Paint</string>
+    <string name="insert">Insert</string>
+    <string name="undo">Undo</string>
+    <string name="redo">Redo</string>
+
+    <string name="TEPCOホームテック株式会社行き">TEPCOホームテック株式会社行き</string>
+    <string name="現地調査報告書">現地調査報告書</string>
+    <string name="現地調査報実施日">現地調査報実施日</string>
+    <string name="年">年</string>
+    <string name="月">月</string>
+    <string name="日">日</string>
+    <string name="TEPCOホームテック作業番号">TEPCOホームテック　作業番号</string>
+    <string name="お客様邸名">お客様　邸名</string>
 </resources>

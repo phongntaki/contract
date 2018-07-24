@@ -1,18 +1,1503 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        android:background="@drawable/border_no_padding_style">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/TEPCOホームテック株式会社行き"
+            android:textSize="15sp"
+            />
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/現地調査報告書"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/現地調査報実施日" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="@string/年"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="@string/月"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="日"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:stretchColumns="*"
+            android:background="@drawable/border_style">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/TEPCOホームテック作業番号"
+                    android:background="@drawable/border_style"
+                    android:layout_marginLeft="125dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="25dp"
+                    android:layout_weight=".30"
+                    android:textAlignment="center"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="29dp"
+                    android:hint="@string/textHint"
+                    android:textSize="15sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/border_style"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/お客様邸名"
+                    android:background="@drawable/border_style"
+                    android:layout_marginLeft="125dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="25dp"
+                    android:layout_weight=".30"
+                    android:textAlignment="center"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="29dp"
+                    android:hint="@string/textHint"
+                    android:background="@drawable/border_style"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.50"
+                    android:textSize="15sp"
+                    />
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1"
+            >
+            <TableRow
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_no_padding_style"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="25dp"
+                    android:layout_weight=".10"
+                    android:text="室内"
+                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_no_padding_gray_style"
+                    android:paddingTop="5dp"
+                    android:paddingRight="672dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:layout_weight=".90"
+                    android:text="(1)訪問者情報"
+                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/border_no_padding_style">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight=".30">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="①TEPCOホームテック提携店名"
+                    android:paddingLeft="25dp"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:text="②提携店担当者 ※身だしなみ等の確認"
+                    android:paddingLeft="25dp"/>
+            </LinearLayout>
+            <TableLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".70">
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="29dp"
+                        android:layout_weight=".50"
+                        android:layout_marginLeft="90dp"
+                        android:textAlignment="center"
+                        android:paddingTop="5dp"
+                        android:text="リベラルソリューション株式会社"
+                        android:paddingLeft="10dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/border_no_padding_style"
+                        />
+                </TableRow>
+                <TableRow>
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="29dp"
+                        android:layout_weight=".50"
+                        android:layout_marginLeft="90dp"
+                        android:hint="@string/textHint"
+                        android:paddingLeft="10dp"
+                        android:textAlignment="center"
+                        android:layout_marginRight="30dp"
+                        android:textSize="15sp"
+                        android:background="@drawable/border_no_padding_style"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_no_padding_style"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="25dp"
+                    android:layout_weight=".10"
+                    android:text="室内"
+                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_no_padding_gray_style"
+                    android:paddingTop="5dp"
+                    android:paddingRight="310dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:layout_weight=".90"
+                    android:text="②工事内容　(施工区分)　の確認　※お客さまのご要望内容"
+                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="onCheckboxClicked1"
+                    android:text="エコキュートの設置"
+                    android:background="@drawable/border_no_padding_style"
+                    android:layout_weight=".30"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="onCheckboxClicked2"
+                    android:text="IHクッキングヒーターの設置"
+                    android:background="@drawable/border_no_padding_style"
+                    android:layout_weight=".30"
+                    android:paddingTop="5dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="64px"
+                    android:layout_weight=".30"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border_no_padding_style">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="その他 ("/>
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="40sp"
+                        android:hint="@string/textHint"
+                        android:layout_gravity="center"
+                        android:layout_weight=".20"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text=")" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="27dp">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_no_padding_style"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="25dp"
+                    android:layout_weight=".10"
+                    android:text="室内"
+                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_no_padding_gray_style"
+                    android:paddingTop="5dp"
+                    android:paddingRight="672dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:layout_weight=".90"
+                    android:text="③分電盤確認"
+                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="□ "
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:background="@color/black"
+                    android:text="【写真】: 分電盤場所全景"
+                    android:textColor="@color/white"
+                    android:layout_weight=".45"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="※分電盤の設置状況・分電盤廻りの状況が把握できる写真"
+                    android:layout_weight=".55"/>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:text="①分電盤の設置場所"
+                    android:layout_weight=".149"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:text="洗面場"
+                    android:layout_weight=".10"
+                    android:textAlignment="center"
+                    android:background="@drawable/border_no_padding_style"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:text="台所"
+                    android:layout_weight=".10"
+                    android:textAlignment="center"
+                    android:background="@drawable/border_no_padding_style"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:text="玄関"
+                    android:layout_weight=".10"
+                    android:textAlignment="center"
+                    android:background="@drawable/border_no_padding_style"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_weight=".30"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border_no_padding_style">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="その他 ("/>
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="40sp"
+                        android:hint="@string/textHint"
+                        android:layout_gravity="center"
+                        android:layout_weight=".20"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text=")" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="27dp">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="□ "
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:background="@color/black"
+                    android:text="【【写真】: 分電盤内部"
+                    android:textColor="@color/white"
+                    android:layout_weight=".45"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="※分電盤の設置状況・分電盤廻りの状況が把握できる写真"
+                    android:layout_weight=".55"/>
+            </TableRow>
+        </TableLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:height="27dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="②分電盤の確認" />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <TableRow
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:text="ア. 分電盤主観戦の太さ"
+                    android:paddingTop="6.8dp"
+                    android:paddingBottom="6.8dp"
+                    android:layout_weight=".45"
+                    android:background="@drawable/border_no_padding_style"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textAlignment="textEnd"
+                    android:background="@drawable/border_no_padding_style"
+                    android:layout_weight=".15">
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/sq_arrays"
+                        android:paddingTop="5.5dp"
+                        android:paddingBottom="5.5dp"
+                        android:spinnerMode="dropdown"></Spinner>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="sq" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="22sq以上は大型CTセンサー対応蓄電池"
+                    android:layout_weight=".40"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:text="イ. SB容量"
+                    android:paddingTop="6.8dp"
+                    android:paddingBottom="6.8dp"
+                    android:layout_weight=".45"
+                    android:background="@drawable/border_no_padding_style"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textAlignment="textEnd"
+                    android:layout_weight=".15"
+                    android:background="@drawable/border_no_padding_style">
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="14dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/alpha_arrays"
+                        android:paddingTop="5.5dp"
+                        android:paddingBottom="5.5dp"
+                        android:spinnerMode="dropdown"></Spinner>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight=".40"
+                    android:text="※サービスブレーカーがある場合に記入" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:text="ウ. ELB容量"
+                    android:paddingTop="6.8dp"
+                    android:paddingBottom="6.8dp"
+                    android:layout_weight=".45"
+                    android:background="@drawable/border_no_padding_style"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textAlignment="textEnd"
+                    android:layout_weight=".15"
+                    android:background="@drawable/border_no_padding_style">
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="14dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/alpha_arrays"
+                        android:paddingTop="5.5dp"
+                        android:paddingBottom="5.5dp"
+                        android:spinnerMode="dropdown"
+                        ></Spinner>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="=>ELBは　( 3P3E ・ 3P2E )"
+                    android:layout_weight=".40"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:paddingTop="7.2dp"
+                    android:paddingBottom="7.3dp"
+                    android:layout_weight=".45"
+                    android:background="@drawable/border_no_padding_style"
+                    android:text="エ.電気メーターと分電盤の間で分岐しなくてはいけない" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight=".15"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="1dp"
+                        android:background="@drawable/border_no_padding_style">
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="有"
+                            android:layout_weight=".50"
+                            />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="無"
+                            android:layout_weight=".50"/>
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".40"
+                    android:layout_marginLeft="10dp"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:paddingTop="6.8dp"
+                    android:paddingBottom="6.8dp"
+                    android:text="オ.分電盤空き回路数の有無"
+                    android:layout_weight=".45"
+                    android:background="@drawable/border_no_padding_style"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight=".15">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="1dp"
+                        android:background="@drawable/border_no_padding_style">
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="有"
+                            android:layout_weight=".50"/>
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="無"
+                            android:layout_weight=".50"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".40"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="※有の場合　空き回路数は ("
+                        android:paddingTop="5dp"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="40sp"
+                        android:hint="@string/textHint"
+                        android:textSize="15sp"
+                        android:layout_weight=".20" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:text=")" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="22dp">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_no_padding_style"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="25dp"
+                    android:layout_weight=".10"
+                    android:text="室内"
+                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_no_padding_gray_style"
+                    android:paddingTop="5dp"
+                    android:paddingRight="310dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:layout_weight=".90"
+                    android:text="(4) 浴室・キッチン確認"
+                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="□ "
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:background="@color/black"
+                    android:text="【写真】: 浴室　リモコン部分、水戦部分、浴槽アダプター部"
+                    android:textColor="@color/white"
+                    android:layout_weight=".45"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:layout_weight=".55"/>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:text="①浴室アダプターの確認"
+                    android:layout_weight=".164"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:text="再利用可"
+                    android:layout_weight=".1365"
+                    android:textAlignment="center"
+                    android:background="@drawable/border_no_padding_style"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_weight=".30"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border_no_padding_style">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="5dp"
+                        android:text="再利用不可 ("/>
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="40sp"
+                        android:hint="@string/textHint"
+                        android:layout_gravity="center"
+                        android:layout_weight=".20"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text=")" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="27dp">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="□ "
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:background="@color/black"
+                    android:text="【写真】: キッチン　コンロ廻り"
+                    android:textColor="@color/white"
+                    android:layout_weight=".45"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:layout_weight=".55"/>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:text="②既設コンロサイズ"
+                    android:layout_weight=".229"
+                    />
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_weight=".191"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border_no_padding_style">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="5dp"
+                        android:text="W "/>
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="40sp"
+                        android:hint="@string/textHint"
+                        android:layout_gravity="center"
+                        android:layout_weight=".20"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="mm" />
+                </TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="x"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textAlignment="center"
+                    android:layout_weight=".02"/>
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_weight=".191"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border_no_padding_style">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="5dp"
+                        android:text="D "/>
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="40sp"
+                        android:hint="@string/textHint"
+                        android:layout_gravity="center"
+                        android:layout_weight=".20"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="mm" />
+                </TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="x"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textAlignment="center"
+                    android:layout_weight=".02"/>
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_weight=".191"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border_no_padding_style">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="5dp"
+                        android:text="H "/>
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="40sp"
+                        android:hint="@string/textHint"
+                        android:layout_gravity="center"
+                        android:layout_weight=".20"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="mm" />
+                </TableRow>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_no_padding_style"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="25dp"
+                    android:layout_weight=".10"
+                    android:text="室内"
+                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_no_padding_gray_style"
+                    android:paddingTop="5dp"
+                    android:paddingRight="310dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:layout_weight=".90"
+                    android:text="(5) 配線ルート及び配管の確認(分電盤から本番)"
+                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="□ "
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:background="@color/black"
+                    android:text="【写真】: 配線ルート"
+                    android:textColor="@color/white"
+                    android:layout_weight=".45"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:layout_weight=".55"/>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:text="※設置予定の分電盤(蓄電用分電盤)、操作パネル〜壁貫通部〜本体、天井点検口の位置が確認できる写真"
+                    android:layout_weight=".229"
+                    />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TableRow
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="【エコキュート】"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:background="@drawable/border_no_padding_style"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="【IHクッキングヒーター】"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:background="@drawable/border_no_padding_style"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_no_padding_style"
+                    android:layout_weight=".25">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="標準外工事："
+                        android:layout_weight=".25"
+                        android:textAlignment="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        />
+                    <RadioButton
+                        android:layout_width="60sp"
+                        android:layout_height="wrap_content"
+                        android:text="有" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_no_padding_style"
+                    android:layout_weight=".25">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="標準外工事："
+                        android:layout_weight=".25"
+                        android:textAlignment="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        />
+                    <RadioButton
+                        android:layout_width="60sp"
+                        android:layout_height="wrap_content"
+                        android:text="無" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_no_padding_style"
+                    android:layout_weight=".25">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="標準外工事："
+                        android:layout_weight=".25"
+                        android:textAlignment="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        />
+                    <RadioButton
+                        android:layout_width="60sp"
+                        android:layout_height="wrap_content"
+                        android:text="有" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_no_padding_style"
+                    android:layout_weight=".25">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="標準外工事："
+                        android:layout_weight=".25"
+                        android:textAlignment="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        />
+                    <RadioButton
+                        android:layout_width="60sp"
+                        android:layout_height="wrap_content"
+                        android:text="無" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFCCCCCC"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:id="@+id/insert_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:contentDescription="@string/insert"
+                    android:src="@drawable/insert1" />
+                <ImageButton
+                    android:id="@+id/new_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:contentDescription="@string/start_new"
+                    android:src="@drawable/new_pic" />
+
+                <ImageButton
+                    android:id="@+id/draw_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:contentDescription="@string/brush"
+                    android:src="@drawable/brush" />
+
+                <ImageButton
+                    android:id="@+id/undo_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:contentDescription="@string/undo"
+                    android:src="@drawable/undo" />
+
+                <ImageButton
+                    android:id="@+id/redo_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:contentDescription="@string/redo"
+                    android:src="@drawable/redo" />
+
+                <ImageButton
+                    android:id="@+id/erase_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:contentDescription="@string/erase"
+                    android:src="@drawable/eraser" />
+                <ImageButton
+                    android:id="@+id/save_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:contentDescription="@string/save"
+                    android:src="@drawable/save" />
+            </LinearLayout>
+            <com.enzi.contract.DrawingView
+                android:id="@+id/drawing"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="#FFFFFFFF" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <ImageButton
+                    android:layout_width="@dimen/large_brush"
+                    android:layout_height="@dimen/large_brush"
+                    android:layout_margin="2dp"
+                    android:background="#FFF5F5DC"
+                    android:contentDescription="@string/paint"
+                    android:onClick="paintClicked"
+                    android:src="@drawable/paint"
+                    android:tag="#FFF5F5DC" />
+                <ImageButton
+                    android:layout_width="@dimen/large_brush"
+                    android:layout_height="@dimen/large_brush"
+                    android:layout_margin="2dp"
+                    android:background="#FF660000"
+                    android:contentDescription="@string/paint"
+                    android:onClick="paintClicked"
+                    android:src="@drawable/paint"
+                    android:tag="#FF660000" />
+
+                <ImageButton
+                    android:layout_width="@dimen/large_brush"
+                    android:layout_height="@dimen/large_brush"
+                    android:layout_margin="2dp"
+                    android:background="#FFFF0000"
+                    android:contentDescription="@string/paint"
+                    android:onClick="paintClicked"
+                    android:src="@drawable/paint"
+                    android:tag="#FFFF0000" />
+
+                <ImageButton
+                    android:layout_width="@dimen/large_brush"
+                    android:layout_height="@dimen/large_brush"
+                    android:layout_margin="2dp"
+                    android:background="#FFFF6600"
+                    android:contentDescription="@string/paint"
+                    android:onClick="paintClicked"
+                    android:src="@drawable/paint"
+                    android:tag="#FFFF6600" />
+
+                <ImageButton
+                    android:layout_width="@dimen/large_brush"
+                    android:layout_height="@dimen/large_brush"
+                    android:layout_margin="2dp"
+                    android:background="#FFFFFF00"
+                    android:contentDescription="@string/paint"
+                    android:onClick="paintClicked"
+                    android:src="@drawable/paint"
+                    android:tag="#FFFFFF00" />
+
+                <ImageButton
+                    android:layout_width="@dimen/large_brush"
+                    android:layout_height="@dimen/large_brush"
+                    android:layout_margin="2dp"
+                    android:background="#FFFFCC00"
+                    android:contentDescription="@string/paint"
+                    android:onClick="paintClicked"
+                    android:src="@drawable/paint"
+                    android:tag="#FFFFCC00" />
+
+                <ImageButton
+                    android:layout_width="@dimen/large_brush"
+                    android:layout_height="@dimen/large_brush"
+                    android:layout_margin="2dp"
+                    android:background="#FF009900"
+                    android:contentDescription="@string/paint"
+                    android:onClick="paintClicked"
+                    android:src="@drawable/paint"
+                    android:tag="#FF009900" />
+
+                <ImageButton
+                    android:layout_width="@dimen/large_brush"
+                    android:layout_height="@dimen/large_brush"
+                    android:layout_margin="2dp"
+                    android:background="#FF00FFFF"
+                    android:contentDescription="@string/paint"
+                    android:onClick="paintClicked"
+                    android:src="@drawable/paint"
+                    android:tag="#FF00FFFF" />
+
+                <ImageButton
+                    android:layout_width="@dimen/large_brush"
+                    android:layout_height="@dimen/large_brush"
+                    android:layout_margin="2dp"
+                    android:background="#FF009999"
+                    android:contentDescription="@string/paint"
+                    android:onClick="paintClicked"
+                    android:src="@drawable/paint"
+                    android:tag="#FF009999" />
+                <ImageButton
+                    android:layout_width="@dimen/large_brush"
+                    android:layout_height="@dimen/large_brush"
+                    android:layout_margin="2dp"
+                    android:background="#FF00008B"
+                    android:contentDescription="@string/paint"
+                    android:onClick="paintClicked"
+                    android:src="@drawable/paint"
+                    android:tag="#FF00008B" />
+            </LinearLayout>
+
+            <!-- Bottom Row -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <ImageButton
+                    android:layout_width="@dimen/large_brush"
+                    android:layout_height="@dimen/large_brush"
+                    android:layout_margin="2dp"
+                    android:background="#FF0000FF"
+                    android:contentDescription="@string/paint"
+                    android:onClick="paintClicked"
+                    android:src="@drawable/paint"
+                    android:tag="#FF0000FF" />
+
+                <ImageButton
+                    android:layout_width="@dimen/large_brush"
+                    android:layout_height="@dimen/large_brush"
+                    android:layout_margin="2dp"
+                    android:background="#FF990099"
+                    android:contentDescription="@string/paint"
+                    android:onClick="paintClicked"
+                    android:src="@drawable/paint"
+                    android:tag="#FF990099" />
+
+                <ImageButton
+                    android:layout_width="@dimen/large_brush"
+                    android:layout_height="@dimen/large_brush"
+                    android:layout_margin="2dp"
+                    android:background="#FFFF6666"
+                    android:contentDescription="@string/paint"
+                    android:onClick="paintClicked"
+                    android:src="@drawable/paint"
+                    android:tag="#FFFF6666" />
+
+                <ImageButton
+                    android:layout_width="@dimen/large_brush"
+                    android:layout_height="@dimen/large_brush"
+                    android:layout_margin="2dp"
+                    android:background="#FFFF00FF"
+                    android:contentDescription="@string/paint"
+                    android:onClick="paintClicked"
+                    android:src="@drawable/paint"
+                    android:tag="#FFFF00FF" />
+                <ImageButton
+                    android:layout_width="@dimen/large_brush"
+                    android:layout_height="@dimen/large_brush"
+                    android:layout_margin="2dp"
+                    android:background="#FFFFFFFF"
+                    android:contentDescription="@string/paint"
+                    android:onClick="paintClicked"
+                    android:src="@drawable/paint"
+                    android:tag="#FFFFFFFF" />
+
+                <ImageButton
+                    android:layout_width="@dimen/large_brush"
+                    android:layout_height="@dimen/large_brush"
+                    android:layout_margin="2dp"
+                    android:background="#FF787878"
+                    android:contentDescription="@string/paint"
+                    android:onClick="paintClicked"
+                    android:src="@drawable/paint"
+                    android:tag="#FF787878" />
+
+                <ImageButton
+                    android:layout_width="@dimen/large_brush"
+                    android:layout_height="@dimen/large_brush"
+                    android:layout_margin="2dp"
+                    android:background="#FF00FF00"
+                    android:contentDescription="@string/paint"
+                    android:onClick="paintClicked"
+                    android:src="@drawable/paint"
+                    android:tag="#FF00FF00" />
+
+                <ImageButton
+                    android:layout_width="@dimen/large_brush"
+                    android:layout_height="@dimen/large_brush"
+                    android:layout_margin="2dp"
+                    android:background="#FF000000"
+                    android:contentDescription="@string/paint"
+                    android:onClick="paintClicked"
+                    android:src="@drawable/paint"
+                    android:tag="#FF000000" />
+                <ImageButton
+                    android:layout_width="@dimen/large_brush"
+                    android:layout_height="@dimen/large_brush"
+                    android:layout_margin="2dp"
+                    android:background="#FFAA88FF"
+                    android:contentDescription="@string/paint"
+                    android:onClick="paintClicked"
+                    android:src="@drawable/paint"
+                    android:tag="#FFAA88FF" />
+
+                <ImageButton
+                    android:layout_width="@dimen/large_brush"
+                    android:layout_height="@dimen/large_brush"
+                    android:layout_margin="2dp"
+                    android:background="#FFDDDDDD"
+                    android:contentDescription="@string/paint"
+                    android:onClick="paintClicked"
+                    android:src="@drawable/paint"
+                    android:tag="#FFDDDDDD" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
