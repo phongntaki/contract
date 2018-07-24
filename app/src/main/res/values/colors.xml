@@ -7,4 +7,14 @@
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
     <color name="gray">#999999</color>
+
+    <string name="start_new">New</string>
+    <string name="colors">Colors</string>
+    <string name="brush">Brush</string>
+    <string name="erase">Erase</string>
+    <string name="save">Save</string>
+    <string name="paint">Paint</string>
+    <string name="insert">Insert</string>
+    <string name="undo">Undo</string>
+    <string name="redo">Redo</string>
 </resources>

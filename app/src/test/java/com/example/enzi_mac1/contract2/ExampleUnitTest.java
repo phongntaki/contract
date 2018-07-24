@@ -1,4 +1,4 @@
-package com.enzi.contract;
+package com.example.enzi_mac1.contract2;
 
 import org.junit.Test;
 
